@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="resultado">Resultado</string>
+    <string name="Um">1</string>
+    <string name="Dois">2</string>
+    <string name="Tres">3</string>
+    <string name="mais">+</string>
+    <string name="Quatro">4</string>
+    <string name="Cinco">5</string>
+    <string name="Seis">6</string>
+    <string name="menos">-</string>
+    <string name="Sete">7</string>
+    <string name="Oito">8</string>
+    <string name="Nove">9</string>
+    <string name="multi">*</string>
+    <string name="Zero">0</string>
+    <string name="div">/</string>
+    <string name="elevado">^</string>
+    <string name="igual">=</string>
+    <string name="raiz">raiz</string>
+    <string name="fatorial">!</string>
+    <string name="limpar">C</string>
+    <string name="limparTudo">CC</string>
+</resources>
