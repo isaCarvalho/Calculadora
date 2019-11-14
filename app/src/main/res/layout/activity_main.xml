@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9E1FF"
+    android:background="#FAFAFA"
     android:theme="@style/Base.AlertDialog.AppCompat.Light"
     tools:context=".MainActivity">
 
@@ -54,21 +54,125 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TableRow
+            android:id="@+id/rwOp0"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/btFat"
+                android:id="@+id/btLn"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
-                android:onClick="fatorial"
-                android:text="@string/fatorial"
+                android:onClick="ln"
+                android:text="@string/ln"
                 tools:layout_conversion_absoluteHeight="48dp"
                 tools:layout_conversion_absoluteWidth="88dp"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btLog"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="log"
+                android:text="@string/log"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btQuadrado"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="quadrado"
+                android:text="@string/quadrado"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btCubo"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="cubo"
+                android:text="@string/cubo"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="128dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwOp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btSin"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="seno"
+                android:text="@string/sin"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btCos"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="cosseno"
+                android:text="@string/cos"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btTan"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="tangente"
+                android:text="@string/tan"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btExp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="exponencial"
+                android:text="@string/exp"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="128dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwOp2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btRaiz"
@@ -81,6 +185,19 @@
                 tools:layout_conversion_absoluteHeight="48dp"
                 tools:layout_conversion_absoluteWidth="88dp"
                 tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/btFat"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:onClick="fatorial"
+                android:text="@string/fatorial"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="88dp"
+                tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="128dp" />
 
             <Button

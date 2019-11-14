@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import kotlin.math.pow
-import kotlin.math.sqrt
+import java.util.*
+import kotlin.math.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -80,12 +80,31 @@ class MainActivity : AppCompatActivity() {
             resultado.text = resultado.text.removeRange(comprimento-2, comprimento-1)
     }
 
-    fun raiz(v : View)
+    fun realizarOp(f: (Double) -> Double)
     {
         val str = resultado.text
         val regex = Regex("(\\d+)")
         val matches = regex.findAll(str)
 
-        matches.forEach { match -> resultado.text = sqrt(match.groupValues[1].toDouble()).toString() }
+        matches.forEach { match -> resultado.text = f(match.groupValues[1].toDouble()).toString() }
     }
+
+    fun raiz(v : View) = realizarOp { x : Double -> sqrt(x) }
+
+    fun seno(v: View) = realizarOp { x : Double -> sin(x) }
+
+    fun cosseno(v: View) = realizarOp { x : Double -> cos(x) }
+
+    fun tangente(v: View) = realizarOp { x: Double -> tan(x) }
+
+    fun exponencial(v: View) = realizarOp { x: Double -> exp(x) }
+
+    fun ln(v: View) = realizarOp { x: Double -> ln(x) }
+
+    fun log(v: View) = realizarOp { x: Double -> log(x, 10.0) }
+
+    fun quadrado(v: View) = realizarOp { x: Double -> x * x }
+
+    fun cubo(v: View) = realizarOp { x: Double -> x * x * x }
 }
+

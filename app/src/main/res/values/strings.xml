@@ -21,4 +21,12 @@
     <string name="fatorial">!</string>
     <string name="limpar">C</string>
     <string name="limparTudo">CC</string>
+    <string name="sin">Sin</string>
+    <string name="cos">Cos</string>
+    <string name="tan">Tan</string>
+    <string name="exp">Exp</string>
+    <string name="ln">ln</string>
+    <string name="log">log</string>
+    <string name="quadrado">x²</string>
+    <string name="cubo">x³</string>
 </resources>
